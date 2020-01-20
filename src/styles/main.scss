@@ -5,3 +5,85 @@
 @import "base/fonts";
 @import "base/general";
 @import "../blocks/modules";
+
+body {
+    background-color: $main_color;
+    font-family: "Roboto", sans-serif;
+}
+
+main {
+    padding: 2rem;
+}
+
+.items {
+    @include row-flex();
+    @include md(justify-content, center);
+
+    .item {
+        @include col();
+        @include size(3);
+        @include size-md(5);
+        @include size-xs(10);
+    }
+}
+.align-right {
+    text-align: right;
+}
+.responsive-table {
+    overflow-x: auto;
+}
+.with-shadow {
+    box-shadow: 0 4px 6px hsla(0, 0%, 0%, .1);
+}
+.rounded-block {
+    border-radius: 10px;
+}
+.author {
+    color: #6e6e6e;
+    display: block;
+    margin: 6px 0 0 0;
+    font-size: rem(11);
+}
+.time {
+    display: inline-block;
+    border: 1px solid #dddddd;
+    padding: 6px 16px 6px 10px;
+    border-radius: 5px;
+    &-value {
+        @include css_for_value_with_icon();
+        font-size: rem(12);
+        font-weight: 500;
+    }
+}
+.with-icon {
+    svg {
+        display: inline-block;
+        width: $svg_wh;
+        height: $svg_wh;
+        vertical-align: middle;
+        margin-right: 6px;
+    }
+}
+.task-name {
+    &:hover {
+        cursor: pointer;
+        color: #000000;
+        text-decoration: underline;
+    }
+}
+.icon {
+    display: inline-block;
+    font-size: rem(14);
+    vertical-align: middle;
+    svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+.primary {
+    fill: #a5b3bb;
+}
+
+.secondary {
+    fill: #0d2b3e;
+}

@@ -1,0 +1,5 @@
+@mixin css_for_value_with_icon() {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: $svg_wh;
+}

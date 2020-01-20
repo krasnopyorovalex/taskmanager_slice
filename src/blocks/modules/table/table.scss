@@ -1,0 +1,70 @@
+.tasks-list {
+    width: 100%;
+    text-align: left;
+    border-radius: 10px;
+    border-collapse: collapse;
+    thead {
+        background-color: #f1f5f8;
+        tr {
+            th {
+                font-family: "Roboto Light", sans-serif;
+                color: #6f7279;
+                text-transform: uppercase;
+                font-size: rem(13);
+                &:last-child {
+                    text-align: right;
+                }
+            }
+        }
+    }
+    th {
+        padding: 1rem;
+    }
+    td {
+        padding: .8rem 1rem;
+    }
+    tbody tr {
+        border-bottom: 1px solid #f1f1f1;
+        background-color: #fff;
+        td {
+            color: #2f3034;
+            font-size: rem(14);
+            &:last-child {
+                text-align: right;
+            }
+            a {
+                color: #2f3034;
+                text-decoration: none;
+            }
+        }
+    }
+}
+.status {
+    padding: 6px 16px;
+    border-radius: 10px;
+    &-value {
+        @include css_for_value_with_icon();
+    }
+}
+.user {
+    @include css_for_value_with_icon();
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: rem(12);
+    letter-spacing: .2px;
+}
+.status_in-work {
+    background-color: #fcf8df;
+}
+.status_new {
+    background-color: #d9f4eb;
+}
+.date {
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 10px;
+    background-color: #ffeded;
+    &-value {
+        @include css_for_value_with_icon();
+    }
+}

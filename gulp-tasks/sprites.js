@@ -16,6 +16,9 @@ gulp.task("sprites", () => {
                 stack: {
                     sprite: "../sprite.svg"
                 }
+            },
+            svg: {
+                namespaceClassnames: false
             }
         }))
         .pipe(gulp.dest(paths.sprites.dist))

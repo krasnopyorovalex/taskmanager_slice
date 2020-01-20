@@ -9,7 +9,7 @@
         "plugin/selector-bem-pattern": [
             {
                 "implicitComponents": true,
-                "componentName": "[-a-z]+",
+                "componentName": ".[-a-z]+",
                 "componentSelectors": {
                     "initial": "^(\\.{componentName}(__[a-z]+|--[-a-z0-9]+|__[-a-z]+--[-a-z0-9]+|.[-a-z]+|__[a-z]+.[-a-z]+)?)$",
                     "combined": "^.+$"
@@ -20,6 +20,9 @@
                     "h[1-6]",
                     "pre",
                     "blockquote",
+                    "body",
+                    "main",
+                    "section",
                     "thead",
                     "tr",
                     "img",
@@ -147,9 +150,6 @@
             "message": "Две точки с запятой подряд не должны быть"
         }],
 
-        "font-family-name-quotes": ["always-where-recommended", {
-            "message": "Название шрифта следует брать в кавычки"
-        }],
         "font-family-no-duplicate-names": [true, {
             "message": "Нельзя дублировать один и тот же шрифт"
         }],

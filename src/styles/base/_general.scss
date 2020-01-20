@@ -3,10 +3,81 @@ h1, h2, h3, h4, h5, h6, ul {
     padding: 0;
 }
 
+.hidden {
+    display: none;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+img[src=""] {
+    display: none;
+}
 .container {
     @include container();
     @include sm(max-width, rem(510));
     @include md(max-width, rem(690));
     @include lg(max-width, rem(930));
     @include xl(max-width, rem(1110));
+}
+.row {
+    @include row-flex();
+}
+.col-12 {
+    @include col();
+    @include size(12);
+}
+.col-10 {
+    @include col();
+    @include size(10);
+}
+.col-4 {
+    @include col();
+    @include size(12);
+    @include size-lg(4);
+}
+.col-3 {
+    @include col();
+    @include size(12);
+    @include size-lg(3);
+}
+.col-2 {
+    @include col();
+    @include size(12);
+    @include size-lg(2);
+}
+.col-6 {
+    @include col();
+    @include size(12);
+    @include size-lg(6);
+}
+.col-8 {
+    @include col();
+    @include size(12);
+    @include size-lg(8);
+}
+.col-9 {
+    @include col();
+    @include size(12);
+    @include size-lg(9);
+}
+.col-4 {
+    @include col();
+    @include size(12);
+    @include size-lg(4);
+}
+footer {
+    margin: 0;
+}
+p, ul {
+    line-height: 24px;
+    text-align: justify;
+    margin: 0 0 15px 0;
+}
+ul, ol {
+    padding: 0 0 0 2rem;
+}
+.debug {
+    z-index: 10;
+    @include debug(rgba(0,0,0,0.4), 1px solid #ff0);
 }
