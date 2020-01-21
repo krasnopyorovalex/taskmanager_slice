@@ -7,6 +7,7 @@
 .vscode
 .github
 .env
+.idea
 ehthumbs.db
 Thumbs.db
 _config.yml
