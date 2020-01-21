@@ -6,11 +6,16 @@
     thead {
         background-color: #f1f5f8;
         tr {
+            border-bottom: 2px solid #e8ecef;
             th {
                 font-family: "Roboto Light", sans-serif;
                 color: #6f7279;
                 text-transform: uppercase;
                 font-size: rem(13);
+                &:nth-child(n + 2) {
+                    @include md(display, table-cell);
+                    display: none;
+                }
                 &:last-child {
                     text-align: right;
                 }
@@ -26,25 +31,41 @@
     tbody tr {
         border-bottom: 1px solid #f1f1f1;
         background-color: #fff;
+        transition: all 300ms ease;
+        &:hover {
+            background-color: hsl(218, 27%, 98%);
+        }
         td {
             color: #2f3034;
             font-size: rem(14);
+            &:nth-child(n + 2) {
+                @include md(display, table-cell);
+                display: none;
+            }
             &:last-child {
                 text-align: right;
-            }
-            a {
-                color: #2f3034;
-                text-decoration: none;
             }
         }
     }
 }
 .status {
-    padding: 6px 16px;
-    border-radius: 10px;
+    padding: 4px 0 4px 16px;
+    border-radius: 5px;
+    &:hover {
+        cursor: pointer;
+    }
     &-value {
         @include css_for_value_with_icon();
     }
+}
+.status_in-work {
+    background-color: #fcf8df;
+}
+.status_new {
+    background-color: #d9f4eb;
+}
+.status_pause {
+    background-color: #edf0f5;
 }
 .user {
     @include css_for_value_with_icon();
@@ -53,18 +74,51 @@
     font-size: rem(12);
     letter-spacing: .2px;
 }
-.status_in-work {
-    background-color: #fcf8df;
-}
-.status_new {
-    background-color: #d9f4eb;
-}
 .date {
     display: inline-block;
-    padding: 6px 16px;
-    border-radius: 10px;
+    padding: 4px 16px;
+    border-radius: 5px;
     background-color: #ffeded;
+    font-size: rem(13);
     &-value {
         @include css_for_value_with_icon();
     }
+}
+.author {
+    color: #6e6e6e;
+    display: block;
+    margin: 6px 0 0 0;
+    font-size: rem(11);
+}
+.time {
+    display: inline-block;
+    border: 1px solid #dddddd;
+    padding: 4px 16px 4px 10px;
+    border-radius: 5px;
+    &-value {
+        @include css_for_value_with_icon();
+        font-size: rem(12);
+        font-weight: 500;
+        letter-spacing: .2px;
+    }
+}
+.with-icon {
+    svg {
+        display: inline-block;
+        width: $svg_wh;
+        height: $svg_wh;
+        vertical-align: middle;
+        margin-right: 6px;
+    }
+}
+.task-name {
+    &:hover {
+        cursor: pointer;
+        color: #000000;
+        text-decoration: underline;
+    }
+}
+svg {
+    --primary: #a5b3bb;
+    fill: #0d2b3e;
 }

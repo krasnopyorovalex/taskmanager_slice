@@ -5,9 +5,11 @@ import gulp from "gulp";
 import svg from "gulp-svg-sprite";
 import debug from "gulp-debug";
 import browsersync from "browser-sync";
+import replace from "gulp-replace";
 
 gulp.task("sprites", () => {
     return gulp.src(paths.sprites.src)
+        .pipe(replace('class="primary"', 'fill="var(--primary)"'))
         .pipe(svg({
             shape: {
                 dest: "intermediate-svg"

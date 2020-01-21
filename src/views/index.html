@@ -30,6 +30,26 @@
         <main>
             <div class="container">
                 <div class="row">
+                    <div class="col-1">
+                        <div class="develop-logo">
+                            <a href="/">
+                                <img src="../img/php_elephant.svg" alt="Develop logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-11">
+                        <div class="menu_with-btn">
+                            @@include("../blocks/modules/menu/menu.html")
+                            <a href="#" class="btn-add with-icon">
+                                <svg>
+                                    <use xlink:href="../img/sprites/sprite.svg#icon-add-circle"></use>
+                                </svg>
+                                Добавить
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
                     <div class="col-12">
                         @@include("../blocks/modules/table/table.html")
                     </div>
@@ -37,7 +57,5 @@
             </div>
         </main>
         @@include("../blocks/modules/footer/footer.html")
-        <script src="../js/main.js"></script>
-        <script src="../js/vendor.js"></script>
     </body>
 </html>

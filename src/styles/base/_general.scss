@@ -2,7 +2,16 @@ h1, h2, h3, h4, h5, h6, ul {
     margin: 0;
     padding: 0;
 }
-
+a, input, button {
+    outline: none;
+}
+a {
+    text-decoration: none;
+    color: $link_color;
+    &:hover {
+        text-decoration: underline;
+    }
+}
 .hidden {
     display: none;
 }
@@ -27,9 +36,14 @@ img[src=""] {
     @include col();
     @include size(12);
 }
+.col-11 {
+    @include col();
+    @include size(11);
+}
 .col-10 {
     @include col();
-    @include size(10);
+    @include size(12);
+    @include size-lg(11);
 }
 .col-4 {
     @include col();
@@ -45,6 +59,11 @@ img[src=""] {
     @include col();
     @include size(12);
     @include size-lg(2);
+}
+.col-1 {
+    @include col();
+    @include size(12);
+    @include size-lg(1);
 }
 .col-6 {
     @include col();
