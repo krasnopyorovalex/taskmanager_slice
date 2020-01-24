@@ -1,0 +1,34 @@
+<div class="form_add-task with-shadow">
+    <div class="form-header">
+        <div class="title">Форма добавления задачи</div>
+    </div>
+    <form action="#">
+        <div class="box">
+            <label for="f_name">Название задачи</label>
+            <input type="text" id="f_name" required>
+        </div>
+        <div class="box">
+            <label for="editor">Описание задачи</label>
+            <textarea id="editor"></textarea>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                @@include("../datepicker/datepicker.html")
+            </div>
+            <div class="col-9">
+                <div class="box">
+                    <label for="f_files">Файлы</label>
+                    <input type="file" id="f_files" name="files[]" multiple>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <button type="submit" class="btn_add-task with-icon">
+                <svg>
+                    <use xlink:href="../img/sprites/sprite.svg#icon-add-circle"></use>
+                </svg>
+                Добавить задачу
+            </button>
+        </div>
+    </form>
+</div>

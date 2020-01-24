@@ -1,0 +1,38 @@
+.pagination {
+    background-color: #f1f5f8;
+    padding: 1rem;
+    text-align: right;
+    .pagination-box {
+        display: inline-block;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            display: inline-block;
+            text-align: center;
+            a {
+                color: #6f7279;
+                display: inline-block;
+                line-height: 30px;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-color: #fff;
+                border: 1px solid #ffeded;
+                transition: all 300ms ease;
+                font-size: rem(12);
+                font-weight: 700;
+            }
+            & + li {
+                margin-left: .5rem;
+            }
+            &.active, &:hover {
+                a {
+                    background-color: #d9f4eb;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

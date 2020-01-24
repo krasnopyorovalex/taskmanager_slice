@@ -5,7 +5,7 @@
     margin-left: auto;
     margin-right: auto;
 }
-.form-login {
+.form-login, .form_add-task {
     padding: 2rem;
     background-color: #fff;
     border-radius: 10px;
@@ -17,29 +17,11 @@
     .box {
         display: block;
         width: 100%;
+        @include md(margin, 1.5rem 0 0 0);
+        margin: 1rem 0 0 0;
         .btn-login {
             @include md(margin, 1rem 0);
             margin: 0;
-        }
-        & + .box {
-            @include md(margin, 1.5rem 0 0 0);
-            margin: 1rem 0 0 0;
-        }
-        label {
-            @include md(margin, 0 0 .5rem .2rem);
-            display: block;
-            position: relative;
-            width: 100%;
-            margin: 0 0 .2rem .2rem;
-        }
-        input {
-            box-sizing: border-box;
-            display: block;
-            width: 100%;
-            border: 1px solid #e1e2e4;
-            padding: 14px 10px;
-            background-color: #f3f7fa;
-            border-radius: 5px;
         }
         input[type=checkbox] {
             display: none;
@@ -94,7 +76,7 @@
         }
     }
 }
-.btn-login {
+.btn-login, .btn_add-task {
     display: flex;
     align-items: center;
     justify-content: center;

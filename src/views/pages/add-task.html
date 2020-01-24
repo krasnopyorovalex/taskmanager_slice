@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>gulp-scss-starter</title>
-        <meta name="theme-color" content="#fff">
+        <title>Login Page</title>
+        <meta name="theme-color" content="#c9e0e04d">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <link rel="shortcut icon" href="../img/favicons/favicon.ico" type="image/x-icon">
@@ -26,17 +26,16 @@
         <link rel="stylesheet" href="../styles/main.css">
     </head>
     <body>
-        <main>
-            <div class="container">
-                @@include("../blocks/modules/header/header.html")
-                <div class="row">
-                    <div class="col-12">
-                        @@include("../blocks/modules/table/table.html")
-                    </div>
+    <main>
+        <div class="container">
+            @@include("../../blocks/modules/header/header.html")
+            <div class="row">
+                <div class="col-12">
+                    @@include("../../blocks/modules/add-task/add-task.html")
                 </div>
             </div>
-        </main>
-        @@include("../blocks/modules/footer/footer.html")
-        <script src="../js/main.js"></script>
+        </div>
+    </main>
+    <script src="../js/main.js"></script>
     </body>
 </html>

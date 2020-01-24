@@ -1,4 +1,4 @@
-<div class="responsive-table rounded-block with-shadow">
+<div class="responsive-table rounded-block with-shadow" xmlns:xlink="">
     <table class="tasks-list">
         <thead>
         <tr>
@@ -83,12 +83,12 @@
                 </div>
             </td>
             <td>
-                <div class="status status_in-work with-icon">
+                <div class="status status_pause with-icon">
                     <svg>
-                        <use xlink:href="../img/sprites/sprite.svg#icon-pause"></use>
+                        <use xlink:href="../img/sprites/sprite.svg#icon-play"></use>
                     </svg>
                     <div class="status-value">
-                        в работе
+                        приостановлено
                     </div>
                 </div>
             </td>
@@ -202,4 +202,5 @@
         </tr>
         </tbody>
     </table>
+    @@include("../pagination/pagination.html")
 </div>

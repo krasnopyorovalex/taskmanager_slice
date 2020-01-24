@@ -1,0 +1,18 @@
+.form_add-task {
+    margin: 2rem 0 0 0;
+    padding: 1rem 2rem 2rem 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    .form-header {
+        border-bottom: 1px solid #dfe0e4;
+    }
+    .title {
+        text-align: left;
+    }
+    .btn_add-task {
+        display: inline-block;
+        margin: 1rem 0 0 0;
+        width: auto;
+        padding: .4rem 1.2rem;
+    }
+}
