@@ -38,7 +38,10 @@ main {
     box-shadow: 0 4px 6px hsla(0, 0%, 0%, .1);
 }
 .rounded-block {
-    border-radius: 10px;
+    border-radius: 6px;
+}
+.text-right {
+    text-align: right;
 }
 .develop-logo {
     padding: 0 0 .5rem 0;

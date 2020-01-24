@@ -27,6 +27,13 @@
     }
     td {
         padding: .8rem 1rem;
+        .task-name {
+            &:hover {
+                cursor: pointer;
+                color: #000000;
+                text-decoration: underline;
+            }
+        }
     }
     tbody tr {
         border-bottom: 1px solid #f1f1f1;
@@ -100,6 +107,9 @@
         font-size: rem(12);
         font-weight: 500;
         letter-spacing: .2px;
+        span {
+            font-size: rem(10);
+        }
     }
 }
 .with-icon {
@@ -109,13 +119,6 @@
         height: $svg_wh;
         vertical-align: middle;
         margin-right: 6px;
-    }
-}
-.task-name {
-    &:hover {
-        cursor: pointer;
-        color: #000000;
-        text-decoration: underline;
     }
 }
 svg {
