@@ -1,7 +1,40 @@
-.task-description, .timer {
+.files-box {
+    overflow: hidden;
+    .title {
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: rem(12);
+        padding: .8rem .5rem;
+        background-color: #ffeded;
+        color: #6e6e6e;
+    }
+}
+.files-list {
+    padding: .4rem 1rem;
+    list-style: none;
+    li {
+        padding: .5rem 0;
+        font-size: rem(12);
+        font-weight: 500;
+        & + li {
+            border-top: 1px solid #eff2f5;
+        }
+        &:last-child {
+            padding: .5rem 0 0 0;
+        }
+        a {
+            color: #6e6e6e;
+        }
+    }
+}
+.files-box, .task-description, .aside-box {
     margin: 1rem 0 0 0;
-    padding: 1rem;
     color: $text_color;
+}
+.task-description, .aside-box {
+    padding: 1rem;
     .task-name {
         font-weight: 500;
         font-size: rem(16);
@@ -15,6 +48,12 @@
         > span {
             font-weight: 500;
             margin: 0 .5rem 0 0;
+        }
+    }
+    .with-icon {
+        svg {
+            display: inline-block;
+            vertical-align: middle;
         }
     }
 }
