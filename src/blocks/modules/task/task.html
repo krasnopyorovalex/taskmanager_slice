@@ -14,11 +14,12 @@
                 <li>Выложить на сервер</li>
             </ul>
         </div>
+        @@include("../images/images.html")
+        @@include("../comments/comments.html")
     </div>
     <div class="col-3">
         <div class="aside-box box-white rounded-block with-shadow">
-            <div class="with-icon text-right time-box">
-                <span>Время:</span>
+            <div class="with-icon text-right">
                 <div class="time">
                     <svg>
                         <use xlink:href="../img/sprites/sprite.svg#icon-time"></use>
@@ -36,7 +37,7 @@
                     новая
                 </div>
             </div>
-            <div class="btn-complete with-icon">
+            <div class="btn btn-complete with-icon">
                 <svg>
                     <use xlink:href="../img/sprites/sprite.svg#icon-check"></use>
                 </svg>
@@ -76,7 +77,19 @@
                 <li><a href="#" target="_blank">Screen-01.img</a></li>
                 <li><a href="#" target="_blank">Screen-02.img</a></li>
                 <li><a href="#" target="_blank">Screen-03.img</a></li>
+                <li><a href="#" target="_blank">ТЗ на калькулятор-от заказчика + комменты.docx</a></li>
             </ul>
+            <div class="add-files">
+                <form action="#" enctype="multipart/form-data" method="post">
+                    <input type="file" name="files[]" class="hidden">
+                    <div class="btn add-files-btn with-icon">
+                        <svg>
+                            <use xlink:href="../img/sprites/sprite.svg#icon-cloud-upload"></use>
+                        </svg>
+                        Добавить файлы
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </div>

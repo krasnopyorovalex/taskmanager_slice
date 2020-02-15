@@ -1,0 +1,46 @@
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .btn-update {
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+    .btn-destroy, .btn-update {
+        border: 1px solid #d8dbe0;
+        background-color: #ffeded;
+        padding: 4px 8px;
+        text-align: center;
+        svg {
+            margin: 0;
+        }
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .btn-destroy {
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+        border-left: none;
+    }
+}
+.message-info {
+    display: flex;
+    align-items: center;
+    margin: .5rem 0;
+    border: 1px solid #d8dbe0;
+    padding: 1rem;
+    background-color: #fcf8df;
+    color: $text_color;
+    text-transform: uppercase;
+    font-size: rem(13);
+    font-weight: 500;
+    &.with-icon {
+        svg {
+            display: inline-block;
+            vertical-align: middle;
+            width: 26px;
+            height: 26px;
+        }
+    }
+}

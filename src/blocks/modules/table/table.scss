@@ -1,4 +1,4 @@
-.tasks-list {
+.users-list, .tasks-list {
     width: 100%;
     text-align: left;
     border-radius: 10px;
@@ -62,6 +62,7 @@
     }
 }
 .status {
+    border: 1px solid #e1e1e1;
     padding: 4px 0 4px 16px;
     border-radius: 5px;
     &:hover {
@@ -71,13 +72,13 @@
         @include css_for_value_with_icon();
     }
 }
-.status_in-work {
+.status_in_work {
     background-color: #fcf8df;
 }
 .status_new {
     background-color: #d9f4eb;
 }
-.status_pause {
+.status_paused, .status_completed, .status_closed {
     background-color: #edf0f5;
 }
 .user {
@@ -89,6 +90,7 @@
 }
 .date {
     display: inline-block;
+    border: 1px solid #e1e1e1;
     padding: 4px 16px;
     border-radius: 5px;
     background-color: #ffeded;
@@ -105,16 +107,16 @@
 }
 .time {
     display: inline-block;
-    border: 1px solid #dddddd;
+    border: 1px solid #e1e1e1;
     padding: 4px 16px 4px 10px;
     border-radius: 5px;
     &-value {
         @include css_for_value_with_icon();
-        font-size: rem(12);
+        font-size: rem(13);
         font-weight: 500;
         letter-spacing: .2px;
         span {
-            font-size: rem(10);
+            font-size: rem(11);
         }
     }
 }

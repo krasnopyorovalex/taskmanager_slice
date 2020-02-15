@@ -9,12 +9,20 @@
     <div class="col-11">
         <div class="menu_with-btn">
             @@include("../menu/menu.html")
-            <a href="/pages/add-task.html" class="btn-add with-icon">
+            <a href="/pages/add-task.html" class="btn btn-add with-icon btn-small">
                 <svg>
                     <use xlink:href="../img/sprites/sprite.svg#icon-add-circle"></use>
                 </svg>
-                Добавить
+                Добавить задачу
             </a>
+            <div id="btn-logout" class="btn btn-exit with-icon btn-small">
+                <svg>
+                    <use xlink:href="../img/sprites/sprite.svg#icon-door-exit"></use>
+                </svg>
+                <div>
+                    Выйти <span class="current-user">(Краснопёров А.)</span>
+                </div>
+            </div>
         </div>
     </div>
 </div>

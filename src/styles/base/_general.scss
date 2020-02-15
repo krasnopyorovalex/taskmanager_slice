@@ -112,6 +112,10 @@ label {
     @include size(12);
     @include size-lg(4);
 }
+[class*=col-] {
+    z-index: 10;
+    box-sizing: border-box;
+}
 footer {
     margin: 0;
 }

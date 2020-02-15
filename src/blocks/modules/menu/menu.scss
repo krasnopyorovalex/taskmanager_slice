@@ -1,6 +1,6 @@
 .main-menu {
     flex-grow: 1;
-    margin: 0;
+    margin: .5rem 0 .1rem 0;
     padding: 0;
     li {
         display: inline-block;
@@ -27,7 +27,7 @@
                 content: "";
                 position: absolute;
                 right: 0;
-                bottom: -1.2rem;
+                bottom: -.9rem;
                 left: 10%;
                 width: 80%;
                 height: 2px;

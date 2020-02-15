@@ -12,7 +12,7 @@
         li {
             display: inline-block;
             text-align: center;
-            a {
+            a, span {
                 color: #6f7279;
                 display: inline-block;
                 line-height: 30px;
@@ -29,7 +29,7 @@
                 margin-left: .2rem;
             }
             &.active, &:hover {
-                a {
+                a, span {
                     background-color: #f0f1f5;
                     text-decoration: none;
                 }

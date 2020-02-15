@@ -3,19 +3,38 @@
     .title {
         display: flex;
         align-items: center;
+        justify-content: center;
         font-weight: 500;
         text-transform: uppercase;
-        font-size: rem(12);
-        padding: .8rem .5rem;
-        background-color: #ffeded;
+        font-size: rem(11);
+        padding: .6rem .5rem;
         color: #6e6e6e;
+        border-bottom: 1px solid #eff2f5;
+        & + .add-files {
+            border-top: none;
+        }
+    }
+    .add-files {
+        display: block;
+        padding: .4rem 0;
+        border-top: 1px solid #eff2f5;
+        text-align: center;
+        background-color: #ffeded;
+        .add-files-btn {
+            font-size: rem(11);
+            padding: 5px 12px;
+        }
+        form {
+            display: inline-block;
+        }
     }
 }
 .files-list {
     padding: .4rem 1rem;
     list-style: none;
     li {
-        padding: .5rem 0;
+        line-height: 16px;
+        padding: .6rem 0;
         font-size: rem(12);
         font-weight: 500;
         & + li {
@@ -29,26 +48,21 @@
         }
     }
 }
-.files-box, .task-description, .aside-box {
-    margin: 1rem 0 0 0;
-    color: $text_color;
-}
 .task-description, .aside-box {
     padding: 1rem;
+    p, ul, ol {
+        margin: 0 0 8px 0;
+    }
     .task-name {
         font-weight: 500;
         font-size: rem(16);
         margin: 0 0 1rem 0;
+        padding: 0 0 1rem 0;
+        border-bottom: 1px solid #eff2f5;
     }
     .status {
         margin: 1rem 0 0 0;
         text-align: center;
-    }
-    .time-box {
-        > span {
-            font-weight: 500;
-            margin: 0 .5rem 0 0;
-        }
     }
     .with-icon {
         svg {
@@ -62,17 +76,8 @@
     background-color: #fff;
 }
 .btn-complete {
-    display: flex;
-    align-items: center;
-    margin: 1rem 0 .5rem 0;
-    border: 1px solid #d1ddeb;
-    padding: 8px 16px;
-    background-color: #f8f9fb;
-    border-radius: 5px;
-    font-size: rem(13);
-    text-transform: uppercase;
-    font-weight: 500;
-    text-align: center;
     justify-content: center;
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    margin: 1rem 0 .5rem 0;
+    padding: 8px 16px;
+    text-align: center;
 }

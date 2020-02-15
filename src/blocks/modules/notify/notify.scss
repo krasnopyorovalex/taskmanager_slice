@@ -1,0 +1,39 @@
+.notification {
+    position: fixed;
+    z-index: 10;
+    top: .5rem;
+    right: .5rem;
+    text-align: right;
+    &:empty {
+        display: none;
+    }
+    &-box {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        max-width: 300px;
+        margin: 0 0 0 auto;
+        border: 1px solid #e8ecef;
+        background-color: #eaeef0;
+    }
+    &-message {
+        padding: 1rem;
+        line-height: 18px;
+        font-size: rem(12);
+        font-weight: 500;
+        border-right: 2px solid #e8ecef;
+        background-color: #f1f5f8;
+    }
+    &-close {
+        padding: 0 1rem;
+        svg {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
