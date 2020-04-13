@@ -1,0 +1,76 @@
+.filter-form, .search-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #f1f5f8;
+    margin: 1rem 0 0 0;
+    padding: .5rem 1rem;
+    .title {
+        font-size: rem(12);
+        text-transform: uppercase;
+        color: #6f7279;
+    }
+    .box {
+        @include lg(width, auto);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 50%;
+        &.m-auto {
+            @include lg(margin, 0 auto 0 0);
+            @include lg(width, auto);
+            width: 100%;
+            margin: .5rem 0 1rem 0;
+        }
+        & + .box {
+            @include lg(margin, 0 0 0 1rem);
+            margin: 0;
+        }
+        label {
+            margin: 0 .5rem 0 0;
+            font-size: rem(12);
+        }
+        input {
+            max-width: 120px;
+            padding: 6px 10px;
+            font-size: rem(12);
+        }
+        select {
+            display: block;
+            width: 100%;
+            border: 1px solid #e1e2e4;
+            padding: 6px 20px 6px 10px;
+            border-radius: 5px;
+            font-size: rem(12);
+        }
+        .icon-cheveron-down {
+            position: absolute;
+            right: .3rem;
+        }
+        button {
+            text-transform: uppercase;
+            outline: none;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.search-form {
+    .box {
+        input {
+            max-width: 320px;
+        }
+    }
+}
+
+.icon-cheveron-down {
+    background-image: url("../img/svg/icon-cheveron-down.svg");
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}

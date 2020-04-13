@@ -27,22 +27,39 @@ img {
 img[src=""] {
     display: none;
 }
-input, textarea {
+input, textarea, select {
     box-sizing: border-box;
     display: block;
     width: 100%;
     border: 1px solid #e1e2e4;
-    padding: 14px 10px;
+    padding: 10px 12px;
     background-color: #f3f7fa;
     border-radius: 5px;
     font-size: rem(14);
 }
+select {
+    box-sizing: border-box;
+    padding: 10px 12px;
+    background-image: url('../img/svg/icon-cheveron-down.svg');
+    background-repeat: no-repeat;
+    background-position: right 6px top 50%;
+    background-size: 16px 16px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    &:focus {
+        outline: none;
+    }
+    &:-moz-focusring {
+        color: transparent;
+        text-shadow: 0 0 0 $text_color;
+    }
+}
 input[type=file] {
-    padding: 8px 10px;
-    height: 46px;
+    height: 38px;
+    padding: 5px 10px;
 }
 label {
-    @include md(margin, 0 0 .5rem .2rem);
+    @include md(margin, 0 0 .4rem .2rem);
     display: block;
     position: relative;
     width: 100%;
@@ -65,7 +82,8 @@ label {
 }
 .col-11 {
     @include col();
-    @include size(11);
+    @include size(12);
+    @include size-lg(11);
 }
 .col-10 {
     @include col();
@@ -113,7 +131,6 @@ label {
     @include size-lg(4);
 }
 [class*=col-] {
-    z-index: 10;
     box-sizing: border-box;
 }
 footer {

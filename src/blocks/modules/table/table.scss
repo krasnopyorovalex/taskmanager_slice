@@ -28,6 +28,9 @@
     td {
         padding: .8rem 1rem;
         .task-name {
+            display: inline-block;
+            max-width: 400px;
+            line-height: 20px;
             &:hover {
                 cursor: pointer;
                 color: #000000;
@@ -83,7 +86,6 @@
 }
 .user {
     @include css_for_value_with_icon();
-    text-transform: uppercase;
     font-weight: 400;
     font-size: rem(12);
     letter-spacing: .2px;
@@ -119,6 +121,26 @@
             font-size: rem(11);
         }
     }
+}
+tfoot {
+    background-color: #f1f5f8;
+    td > div {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .action-buttons {
+        .btn {
+            margin: 0 0 0 .5rem;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+.time-label {
+    margin: 0 .6rem 0 0;
+    font-weight: 500;
+    display: inline-block;
 }
 svg {
     --primary: #a5b3bb;

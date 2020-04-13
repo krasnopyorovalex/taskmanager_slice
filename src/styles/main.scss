@@ -32,19 +32,24 @@ main {
     text-align: right;
 }
 .develop-logo {
+    display: flex;
+    align-items: center;
     padding: 0 0 .2rem 0;
-    border-bottom: 1px solid
-        #d8dbe0;
+    border-bottom: 1px solid #d8dbe0;
     a {
         display: block;
     }
     img {
         max-width: 50px;
+        min-height: 38px;
     }
 }
 .menu_with-btn {
+    @include lg(margin, 0);
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin: .5rem 0 0 0;
     padding: 0 0 .5rem 0;
     border-bottom: 1px solid #d8dbe0;
 }
@@ -68,12 +73,19 @@ main {
     }
     &-value {
         background-color: #ffeded;
-        border: 1px solid #d8dbe0;
         margin: 0 0 0 auto;
+        border: 1px solid #d8dbe0;
         padding: 6px 12px;
         border-radius: 5px;
         font-size: rem(12);
         font-weight: 500;
+        &.is-edited {
+            padding: 5px 12px;
+        }
+        .with-icon svg {
+            width: 16px;
+            height: 16px;
+        }
     }
     &-label {
         font-weight: 500;
@@ -85,6 +97,11 @@ main {
 .files-box, .task-description, .aside-box, .comments {
     margin: 1rem 0 0 0;
     color: $text_color;
+}
+.is-edited {
+    &:hover {
+        cursor: pointer;
+    }
 }
 .btn {
     display: flex;

@@ -7,18 +7,7 @@
         text-decoration: none;
     }
 }
-//.user-info {
-//    display: flex;
-//    align-items: center;
-//    justify-content: flex-end;
-//    //background-color: #f1f5f8;
-//    //margin: 1rem 0 0 0;
-//    //border: 1px solid #e1e1e1;
-//    padding: .2rem 0;
-//    border-bottom-left-radius: 5px;
-//    border-bottom-right-radius: 5px;
-//    span {
-//        font-size: rem(11);
-//        text-transform: uppercase;
-//    }
-//}
+.btn-menu {
+    @include lg(display, none);
+    margin: 0 0 0 auto;
+}

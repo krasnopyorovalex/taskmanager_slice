@@ -3,9 +3,23 @@
         <div class="title">Форма добавления задачи</div>
     </div>
     <form action="#">
-        <div class="box">
-            <label for="f_name">Название задачи</label>
-            <input type="text" id="f_name" required>
+        <div class="row">
+            <div class="col-8">
+                <div class="box">
+                    <label for="f_name">Название задачи</label>
+                    <input type="text" id="f_name" required>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="box">
+                    <label for="f_user">Заказчик</label>
+                    <select name="user_id" id="f_user">
+                        <option value="1">Краснопёров А.</option>
+                        <option value="2">Михайлутин Н.</option>
+                        <option value="3">Кирейчик Д.</option>
+                    </select>
+                </div>
+            </div>
         </div>
         <div class="box">
             <label for="editor">Описание задачи</label>

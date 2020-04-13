@@ -1,7 +1,7 @@
-import DatePicker from "../../../js/import/datepicker";
-
-new DatePicker({
-    id: 'datepicker',
-    dateFormat: 'yyyy-MM-dd',
-    minDate: 1
-});
+// import DatePicker from "../../../js/import/datepicker";
+//
+// new DatePicker({
+//     id: 'datepicker',
+//     dateFormat: 'yyyy-MM-dd',
+//     minDate: 1
+// });

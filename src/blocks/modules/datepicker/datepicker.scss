@@ -4,7 +4,6 @@
     border: 1px solid #ccc;
     border-radius: 3px;
     box-shadow: 0 0 3px #bbb;
-    color: #666;
     margin-top: 10px;
 }
 
@@ -69,7 +68,8 @@
 }
 
 .datepicker__header div {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
 }
 
 .datepicker__arrow {

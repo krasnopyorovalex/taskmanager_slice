@@ -1,0 +1,34 @@
+<div class="row">
+    <div class="col-12">
+        <form action="#" method="post" class="filter-form with-shadow rounded-block">
+            <div class="box m-auto">
+                <div class="title">Фильтр задач для отчёта</div>
+            </div>
+            <div class="box">
+                <label for="f-started-at">Задачи от:</label>
+                <input type="text" name="started-at" id="f-started-at">
+            </div>
+            <div class="box">
+                <label for="f-stop-at">Задачи до:</label>
+                <input type="text" name="started-at" id="f-stop-at">
+            </div>
+            <div class="box">
+                <label for="f-user">Исполнитель</label>
+                <select name="performer" id="f-user">
+                    <option value="">Не выбрано</option>
+                    <option value="Краснопёров">Краснопёров А.</option>
+                    <option value="Кирейчик">Кирейчик Д.</option>
+                    <option value="Михайлутин">Михайлутин Н.</option>
+                </select>
+            </div>
+            <div class="box">
+                <button class="btn with-icon btn-small" type="submit">
+                    <svg>
+                        <use xlink:href="../img/sprites/sprite.svg#icon-order-horizontal"></use>
+                    </svg>
+                    Применить
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
